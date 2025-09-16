@@ -8,8 +8,8 @@
     <meta name="keywords" content="waterpunt, drinkwater, kraan, tappunt, wandelen" />
     <meta name="author" content="Ernesto Lanera" />
     <title>Waterpunten | Openbare Voorzieningen</title>
-    <link rel="stylesheet" type="text/css" href="../css/base.css" />
-    <link rel="stylesheet" type="text/css" href="../css/waterpunten.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/waterpunten.css" />
 </head>
 
 <body>

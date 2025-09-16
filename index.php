@@ -15,7 +15,7 @@
 <body>
   <header>
     <h1>Vind direct een openbaar toilet of waterpunt in jouw buurt</h1>
-    <?php include 'includes/nav.php'; ?>
+    <?php include 'php/includes/nav.php'; ?>
   </header>
 
   <main>
@@ -30,7 +30,7 @@
     </section>
   </main>
 
-  <?php include 'includes/footer.php'; ?>
+  <?php include 'php/includes/footer.php'; ?>
 </body>
 
 </html>

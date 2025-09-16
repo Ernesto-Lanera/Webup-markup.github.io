@@ -8,8 +8,8 @@
     <meta name="keywords" content="reviews, beoordelingen, sterren, ervaringen, feedback" />
     <meta name="author" content="Ernesto Lanera" />
     <title>Reviews | Openbare Voorzieningen</title>
-    <link rel="stylesheet" type="text/css" href="../css/base.css" />
-    <link rel="stylesheet" type="text/css" href="../css/reviews.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/reviews.css" />
 </head>
 
 <body>

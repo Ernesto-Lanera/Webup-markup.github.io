@@ -8,8 +8,8 @@
     <meta name="keywords" content="contact, feedback, samenwerking, e-mail, formulier" />
     <meta name="author" content="Jouw Naam" />
     <title>Contact | Openbare Voorzieningen</title>
-    <link rel="stylesheet" type="text/css" href="../css/base.css" />
-    <link rel="stylesheet" type="text/css" href="../css/contact.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/contact.css" />
 </head>
 
 <body>

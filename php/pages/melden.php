@@ -8,8 +8,8 @@
     <meta name="keywords" content="melden, contact, fout, locatie, formulier" />
     <meta name="author" content="Ernesto Lanera" />
     <title>Contact & Melden | Openbare Voorzieningen</title>
-    <link rel="stylesheet" type="text/css" href="../css/base.css" />
-    <link rel="stylesheet" type="text/css" href="../css/melden.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/melden.css" />
 </head>
 
 <body>

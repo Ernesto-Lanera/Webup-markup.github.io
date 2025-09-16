@@ -8,8 +8,8 @@
     <meta name="keywords" content="toilet, openbaar toilet, wc, toegankelijk, schoon" />
     <meta name="author" content="Ernesto Lanera" />
     <title>Toiletten | Openbare Voorzieningen</title>
-    <link rel="stylesheet" type="text/css" href="../css/base.css" />
-    <link rel="stylesheet" type="text/css" href="../css/toiletten.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/toiletten.css" />
 </head>
 
 <body>
