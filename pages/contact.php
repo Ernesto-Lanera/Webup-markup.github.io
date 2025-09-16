@@ -4,7 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact Vragen en feedback</title>
+    <meta name="description" content="Neem contact met ons op voor vragen, feedback of samenwerking. Vul het formulier in of gebruik ons e-mailadres en sociale media kanalen." />
+    <meta name="keywords" content="contact, feedback, samenwerking, e-mail, formulier" />
+    <meta name="author" content="Jouw Naam" />
+    <title>Contact | Openbare Voorzieningen</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/contact.css" />
 </head>

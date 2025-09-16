@@ -4,7 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Reviews – Ervaringen</title>
+    <meta name="description" content="Lees ervaringen van andere gebruikers over toiletten en waterpunten. Schrijf een review en beoordeel voorzieningen met sterren en tekst." />
+    <meta name="keywords" content="reviews, beoordelingen, sterren, ervaringen, feedback" />
+    <meta name="author" content="Ernesto Lanera" />
+    <title>Reviews | Openbare Voorzieningen</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/reviews.css" />
 </head>

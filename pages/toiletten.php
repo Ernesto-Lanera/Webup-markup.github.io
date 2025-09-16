@@ -4,7 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Toiletten in jouw buurt</title>
+    <meta name="description" content="Overzicht van schone en toegankelijke openbare toiletten in jouw buurt. Bekijk openingstijden, toegankelijkheid en route-informatie." />
+    <meta name="keywords" content="toilet, openbaar toilet, wc, toegankelijk, schoon" />
+    <meta name="author" content="Ernesto Lanera" />
+    <title>Toiletten | Openbare Voorzieningen</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/toiletten.css" />
 </head>
