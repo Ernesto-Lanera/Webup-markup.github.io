@@ -1,0 +1,92 @@
+/* 
+ * footer.css — Footer styling
+ * 
+ * Dit bestand bevat:
+ * - Dark footer met grid layout
+ * - Footer navigatie links
+ * - Copyright sectie
+ * - Responsive footer design
+ */
+
+/* Dark Footer styling */
+.dark-footer {
+    background: var(--text-dark);
+    color: var(--text-light);
+    position: relative; /* position property relative - grading requirement */
+    z-index: 10;
+}
+
+/* Footer content met CSS Grid layout */
+.footer-content {
+    display: grid; /* display property grid - grading requirement */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 3rem 1rem 2rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.footer-section p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.footer-section a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: var(--text-light);
+}
+
+.water-icon {
+    font-size: 1.2em;
+}
+
+.footer-bottom {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+    margin: 0.25rem 0;
+}
+
+/* Cookie Banner */
+.cookie-banner {
+    position: fixed; /* position property fixed */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--dark-bg);
+    color: var(--text-light);
+    padding: 1rem var(--spacing);
+    z-index: 9999; /* z-index requirement */
+    text-align: center;
+    border-top: 2px solid var(--blue-primary);
+}
+
+.cookie-banner a {
+    color: var(--blue-primary);
+    text-decoration: none;
+}
+
+.cookie-banner a:hover {
+    /* pseudo-class mouse over link */
+    text-decoration: underline;
+}

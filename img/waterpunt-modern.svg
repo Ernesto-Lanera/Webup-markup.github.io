@@ -1,0 +1,82 @@
+<svg width="500" height="300" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background street scene -->
+  <rect width="500" height="300" fill="#f5f5f5"/>
+  
+  <!-- Brick building background -->
+  <rect x="350" y="0" width="150" height="200" fill="#c4785a"/>
+  <!-- Brick pattern -->
+  <g stroke="#a66749" stroke-width="1" fill="none">
+    <line x1="350" y1="20" x2="500" y2="20"/>
+    <line x1="350" y1="40" x2="500" y2="40"/>
+    <line x1="350" y1="60" x2="500" y2="60"/>
+    <line x1="350" y1="80" x2="500" y2="80"/>
+    <line x1="350" y1="100" x2="500" y2="100"/>
+    <line x1="350" y1="120" x2="500" y2="120"/>
+    <line x1="350" y1="140" x2="500" y2="140"/>
+    <line x1="350" y1="160" x2="500" y2="160"/>
+    <line x1="350" y1="180" x2="500" y2="180"/>
+  </g>
+  
+  <!-- Window -->
+  <rect x="370" y="50" width="60" height="80" fill="#87ceeb" stroke="#333" stroke-width="2"/>
+  <!-- Window frame -->
+  <line x1="400" y1="50" x2="400" y2="130" stroke="#333" stroke-width="2"/>
+  
+  <!-- Ground -->
+  <rect x="0" y="200" width="500" height="100" fill="#d3d3d3"/>
+  
+  <!-- Tree trunk -->
+  <rect x="20" y="120" width="15" height="80" fill="#8b4513"/>
+  
+  <!-- Tree leaves -->
+  <circle cx="27" cy="120" r="25" fill="#228b22"/>
+  <circle cx="35" cy="110" r="20" fill="#32cd32"/>
+  <circle cx="20" cy="105" r="22" fill="#228b22"/>
+  
+  <!-- Modern water fountain base -->
+  <rect x="180" y="150" width="80" height="100" rx="10" fill="#4a4a4a"/>
+  
+  <!-- Water fountain top section -->
+  <rect x="190" y="120" width="60" height="40" rx="8" fill="#2c2c2c"/>
+  
+  <!-- Dispensing area -->
+  <rect x="200" y="135" width="40" height="15" rx="3" fill="#1a1a1a"/>
+  
+  <!-- Water stream -->
+  <path d="M 220 150 Q 220 160 220 170" stroke="#87ceeb" stroke-width="4" fill="none"/>
+  <path d="M 218 150 Q 218 158 218 166" stroke="#b0e0e6" stroke-width="2" fill="none"/>
+  <path d="M 222 150 Q 222 158 222 166" stroke="#b0e0e6" stroke-width="2" fill="none"/>
+  
+  <!-- Green bottle being filled -->
+  <rect x="210" y="170" width="20" height="40" rx="3" fill="#32cd32"/>
+  <rect x="215" y="165" width="10" height="8" rx="2" fill="#228b22"/>
+  
+  <!-- Person's hand -->
+  <ellipse cx="205" cy="175" rx="8" ry="12" fill="#fdbcb4"/>
+  
+  <!-- Control button -->
+  <circle cx="235" cy="140" r="3" fill="#ff4444"/>
+  
+  <!-- Drainage area -->
+  <rect x="185" y="245" width="70" height="5" fill="#1a1a1a"/>
+  
+  <!-- Modern design elements -->
+  <rect x="185" y="125" width="5" height="25" fill="#0066cc"/>
+  <rect x="250" y="125" width="5" height="25" fill="#0066cc"/>
+  
+  <!-- People silhouettes -->
+  <!-- Person in blue shirt -->
+  <circle cx="120" cy="180" r="8" fill="#fdbcb4"/>
+  <rect x="115" y="188" width="10" height="25" fill="#4169e1"/>
+  <rect x="110" y="195" width="5" height="18" fill="#000080"/>
+  <rect x="125" y="195" width="5" height="18" fill="#000080"/>
+  <rect x="118" y="213" width="4" height="12" fill="#8b4513"/>
+  <rect x="107" y="188" width="8" height="3" fill="#fdbcb4"/>
+  
+  <!-- Person on right -->
+  <circle cx="320" cy="185" r="8" fill="#fdbcb4"/>
+  <rect x="315" y="193" width="10" height="25" fill="#696969"/>
+  <rect x="310" y="200" width="5" height="18" fill="#2f4f4f"/>
+  <rect x="325" y="200" width="5" height="18" fill="#2f4f4f"/>
+  <rect x="318" y="218" width="4" height="12" fill="#000"/>
+</svg>

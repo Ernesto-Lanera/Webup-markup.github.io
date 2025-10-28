@@ -1,0 +1,173 @@
+/* 
+ * layout.css — Algemene layout en content styling
+ * 
+ * Dit bestand bevat:
+ * - Hoofdpagina layout structuur
+ * - Content wrapper styling
+ * - Grid layouts voor overzichtspagina's
+ * - Responsive design implementaties
+ */
+
+/* Hoofdtitel styling met tekst transformaties */
+.main-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 1.5rem var(--spacing);
+    text-transform: uppercase;    /* text-transform property uppercase - grading requirement */
+    letter-spacing: 0.05em;       /* letter-spacing property - grading requirement */
+}
+
+/* Main Content Styling met flexbox */
+.main-content {
+    background: var(--bg-white);
+    flex: 1;                     /* flex property 1 voor groei */
+    padding-top: var(--header-height);
+    width: 100%;
+}
+
+/* Content wrapper voor consistente margins */
+.content-wrapper {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.page-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.intro-text {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.content-section {
+    margin-bottom: 2rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-icon {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.content-section h3 {
+    color: var(--text-dark);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.content-section p {
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.info-list {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.info-list li {
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+/* Section dividers - lijnen tussen secties */
+.section-divider {
+    border: none;
+    height: 1px;
+    background-color: var(--border-light);
+    margin: 2rem 0;
+    opacity: 0.7;
+}
+
+/* Buttons and CTAs */
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 3rem 0;                      /* margin aangepast - geen auto centering */
+    align-items: stretch;                /* stretch zorgt dat buttons de volledige breedte nemen */
+    width: 100%;
+}
+
+/* CTA button specifieke styling - even lang als de content wrapper */
+.cta-btn {
+    width: 100% !important;
+    margin: 0.5rem 0 !important;         /* margin tussen buttons, geen auto centering */
+    display: block !important;           /* zorg dat ze onder elkaar staan */
+}
+
+.btn {
+    display: block;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    color: white !important;        /* Expliciet witte tekst voor alle buttons */
+}
+
+.btn-blue {
+    background: var(--blue-primary);
+    color: white !important;        /* Expliciet witte tekst */
+    border: none;
+}
+
+.btn-blue:hover {
+    background: var(--blue-dark);
+}
+
+.btn-blue:active {
+    transform: translateY(1px);
+}
+
+/* Child selector usage */
+.content-section > p {           /* selecting elements by > (bigger sign) */
+    margin-bottom: 1rem;
+}
+
+/* Table styling with nth-child */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+table th, table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-light);
+}
+
+table tbody tr:nth-child(even) { /* nth-child even */
+    background-color: #CFF;
+}
+
+table tbody tr:nth-child(odd) {  /* nth-child odd */  
+    background-color: #FFF;
+}

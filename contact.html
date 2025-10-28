@@ -1,0 +1,260 @@
+<!-- 
+    Contactpagina - Toiletten & Waterpunten Haarlem
+    Formulier voor het indienen van vragen, meldingen en suggesties
+    Bevat validatie en toegankelijkheidsfuncties
+-->
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <!-- Meta tags voor SEO en browser configuratie -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description"
+            content="Neem contact op voor vragen over openbare toiletten en drinkwaterpunten in Haarlem. Meld problemen of geef nieuwe locaties door.">
+        <meta name="keywords"
+            content="Haarlem, contact, toiletten, waterpunten, melden">
+        <meta name="author" content="Ernesto Lanera">
+        <link rel="icon" href="img/favicon.svg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="css/layout.css">
+        <link rel="stylesheet" type="text/css" href="css/contact.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+        <title>Contact - Toiletten & Waterpunten Haarlem</title>
+    </head>
+    <body>
+        <header class="css-menu-header">
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+            <nav class="header-nav">
+                <a href="index.html" class="back-link">← Terug</a>
+                <h1 class="header-title">Contact</h1>
+                <label for="menu-toggle" class="hamburger-label">
+                    <em class="hamburger-line"></em>
+                    <em class="hamburger-line"></em>
+                    <em class="hamburger-line"></em>
+                </label>
+            </nav>
+
+            <label for="menu-toggle" class="menu-overlay"></label>
+
+            <aside class="sidebar-menu">
+                <header class="menu-header">
+                    <h2>Menu</h2>
+                    <label for="menu-toggle" class="close-menu">×</label>
+                </header>
+                <nav class="menu-nav">
+                    <ul>
+                        <!-- Hidden radio for closing all dropdowns -->
+                        <input type="radio" name="menu-dropdown" id="close-dropdown" class="dropdown-radio" checked>
+                        
+                        <li><a href="index.html">🏠 Home</a></li>
+                        <li class="menu-dropdown">
+                            <input type="radio" name="menu-dropdown" id="toiletten-toggle" class="dropdown-radio">
+                            <label for="toiletten-toggle" class="dropdown-label">
+                                <strong class="menu-icon">🚽</strong>
+                                <strong class="menu-text">Toiletten</strong>
+                                <strong class="dropdown-arrow">v</strong>
+                            </label>
+                            <ul class="submenu">
+                                <li><a href="toiletten.html">Overzicht</a></li>
+                                <li><a
+                                        href="toilet-detail-station.html">Stationsplein
+                                        1</a></li>
+                                <li><a
+                                        href="toilet-detail-grote-markt.html">Grote
+                                        Markt</a></li>
+                                <li><a
+                                        href="toilet-detail-bibliotheek.html">Bibliotheek
+                                        Centrum</a></li>
+                                <li><a
+                                        href="toilet-detail-haarlemmerhout.html">Park
+                                        Haarlemmerhout</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-dropdown">
+                            <input type="radio" name="menu-dropdown" id="waterpunten-toggle" class="dropdown-radio">
+                            <label for="waterpunten-toggle" class="dropdown-label">
+                                <strong class="menu-icon">💧</strong>
+                                <strong class="menu-text">Waterpunten</strong>
+                                <strong class="dropdown-arrow">v</strong>
+                            </label>
+                            <ul class="submenu">
+                                <li><a
+                                        href="waterpunten.html">Overzicht</a></li>
+                                <li><a
+                                        href="waterpunt-detail-grote-markt.html">Grote
+                                        Markt</a></li>
+                                <li><a
+                                        href="waterpunt-detail-pleinpark.html">Pleinpark</a></li>
+                                <li><a
+                                        href="waterpunt-detail-patronaat.html">Patronaat</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html" class="active-page">📞
+                                Contact</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </header>
+
+        <main class="main-content">
+            <section class="contact-wrapper">
+                <section class="contact-form-container">
+                    <h2>Neem contact op</h2>
+                    <p class="contact-intro">Klopt er iets niet of wil je een
+                        nieuwe locatie doorgeven? Met onderstaand formulier kun
+                        je eenvoudig contact opnemen.</p>
+
+                    <!-- Contactformulier met HTML validatie -->
+                    <!-- CSS-only error display systeem -->
+                    <input type="checkbox" id="show-errors"
+                        style="display: none;">
+                    <form class="contact-form" action="#" method="post">
+                        <fieldset>
+                            <legend>Contactgegevens</legend>
+                            <!-- Aanhef dropdown veld -->
+                            <section class="form-field">
+                                <label for="aanhef">Aanhef <strong
+                                        class="required"
+                                        aria-label="verplicht veld">*</strong></label>
+                                <select id="aanhef" name="aanhef" required
+                                    title="Kies een aanhef: Dhr, Mvr of anders"
+                                    aria-describedby="aanhef-error">
+                                    <option value disabled selected
+                                        hidden>Selecteer uw aanhef</option>
+                                    <option value="dhr">Dhr.</option>
+                                    <option value="mvr">Mvr.</option>
+                                    <option value="anders">Anders</option>
+                                </select>
+                                <em class="error-message"
+                                    id="aanhef-error"></em>
+                            </section>
+
+                            <section class="form-field">
+                                <label for="naam">Naam <strong class="required"
+                                        aria-label="verplicht veld">*</strong></label>
+                                <input id="naam" name="naam" type="text"
+                                    placeholder="Uw volledige naam"
+                                    required minlength="2" maxlength="50"
+                                    title="Vul uw volledige naam in (minimaal 2 karakters)"
+                                    aria-describedby="naam-error">
+                                <em class="error-message" id="naam-error"></em>
+                            </section>
+
+                            <section class="form-field">
+                                <label for="email">E-mail <strong
+                                        class="required"
+                                        aria-label="verplicht veld">*</strong></label>
+                                <input id="email" name="email" type="email"
+                                    placeholder="uw.email@voorbeeld.nl"
+                                    required
+                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                                    title="Vul een geldig e-mailadres in"
+                                    aria-describedby="email-error">
+                                <em class="error-message" id="email-error"></em>
+                            </section>
+
+                            <section class="form-field">
+                                <label for="telefoon">Telefoonnummer <em
+                                        class="optional">(optioneel)</em></label>
+                                <input id="telefoon" name="telefoon" type="tel"
+                                    placeholder="06 12345678"
+                                    pattern="[0-9+\-\s\(\)]{8,15}"
+                                    title="Vul een geldig telefoonnummer in"
+                                    aria-describedby="telefoon-error">
+                                <em class="error-message"
+                                    id="telefoon-error"></em>
+                            </section>
+
+                            <section class="form-field">
+                                <label for="bericht">Bericht <strong
+                                        class="required"
+                                        aria-label="verplicht veld">*</strong>
+                                    <em class="form-hint">(minimaal 10
+                                        karakters)</em></label>
+                                <textarea id="bericht" name="bericht" rows="6"
+                                    placeholder="Beschrijf uw vraag of melding..."
+                                    required minlength="10" maxlength="1000"
+                                    title="Vul uw bericht in (minimaal 10 karakters)"
+                                    aria-describedby="bericht-error"></textarea>
+                                <em class="error-message"
+                                    id="bericht-error"></em>
+                            </section>
+
+                            <p class="required-fields-note">*Verplichte
+                                velden</p>
+
+                            <section class="form-submit">
+                                <label for="show-errors"
+                                    class="submit-button">Verstuur
+                                    bericht</label>
+                            </section>
+                        </fieldset>
+                    </form>
+
+                    <aside class="form-info-box">
+                        <h4>Wat kun je verwachten?</h4>
+                        <p>We nemen binnen 3 werkdagen contact met je op.
+                            Bedankt voor je bijdrage!</p>
+                    </aside>
+                </section>
+            </section>
+
+        </main>
+
+        <footer class="dark-footer">
+            <section class="footer-content">
+                <section class="footer-section">
+                    <h3><strong class="water-icon">💧</strong> Toiletten &amp;
+                        Waterpunten</h3>
+                    <p>Haarlem</p>
+                    <p>Vind snel en gemakkelijk openbare toiletten en
+                        drinkwaterpunten in de stad.</p>
+                </section>
+
+                <section class="footer-section">
+                    <h4>Navigatie</h4>
+                    <nav>
+                        <p><a href="index.html">Home</a></p>
+                        <p><a href="toiletten.html">Overzicht Toiletten</a></p>
+                        <p><a href="waterpunten.html">Overzicht
+                                Waterpunten</a></p>
+                        <p><a href="contact.html">Contact</a></p>
+                    </nav>
+                </section>
+
+                <aside class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 info@toiletten-waterpunten.nl</p>
+                    <p>📍 Haarlem, Nederland</p>
+                    <p>🕐 24/7 beschikbaar</p>
+                </aside>
+            </section>
+
+            <section class="footer-bottom">
+                <p>@ 2025 Toiletten & Waterpunten Haarlem. Alle rechten
+                    voorbehouden.</p>
+            </section>
+        </footer>
+
+        <section class="cookie-banner" role="dialog" aria-live="polite">We
+            gebruiken alleen functionele cookies. <a href="contact.html">Meer
+                info</a></section>
+    </body>
+</html>
+
+

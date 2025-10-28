@@ -1,0 +1,199 @@
+<!--
+    waterpunten.html - Overzichtspagina voor alle drinkwaterpunten in Haarlem
+    
+    Deze pagina toont een grid overzicht van alle beschikbare waterpuntlocaties
+    met informatie over gratis drinkwater en links naar detailpagina's.
+-->
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <!-- Basis HTML meta tags voor SEO en responsive design -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Overzicht van alle drinkwaterpunten in Haarlem met informatie over locatie, bereikbaarheid en voorzieningen.">
+    <meta name="keywords" content="Haarlem, waterpunten, drinkwater, gratis, toegankelijkheid">
+    <meta name="author" content="Ernesto Lanera">
+    <link rel="icon" href="img/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/pages.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <title>Overzicht Waterpunten - Haarlem</title>
+</head>
+<body>
+	<header class="css-menu-header">
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        
+        <nav class="header-nav">
+            <section class="logo-container">
+                <a href="index.html">
+                    <img src="img/logo-drop.svg" alt="Logo" class="header-logo" title="Website logo">
+                </a>
+            </section>
+            <h1 class="header-title">Overzicht Waterpunten</h1>
+            <label for="menu-toggle" class="hamburger-label">
+                <em class="hamburger-line"></em>
+                <em class="hamburger-line"></em>
+                <em class="hamburger-line"></em>
+            </label>
+        </nav>
+
+        <label for="menu-toggle" class="menu-overlay"></label>
+        
+        <aside class="sidebar-menu">
+            <header class="menu-header">
+                <h2>Menu</h2>
+                <label for="menu-toggle" class="close-menu">�</label>
+            </header>
+            <nav class="menu-nav">
+                <ul>
+                    <!-- Hidden radio for closing all dropdowns -->
+                    <input type="radio" name="menu-dropdown" id="close-dropdown" class="dropdown-radio">
+                    
+                    <li><a href="index.html">🏠 Home</a></li>
+                    <li class="menu-dropdown">
+                        <input type="radio" name="menu-dropdown" id="toiletten-toggle" class="dropdown-radio">
+                        <label for="toiletten-toggle" class="dropdown-label">
+                            <strong class="menu-icon">🚽</strong>
+                            <strong class="menu-text">Toiletten</strong>
+                            <strong class="dropdown-arrow">v</strong>
+                        </label>
+                        <ul class="submenu">
+                            <li><a href="toiletten.html">Overzicht</a></li>
+                            <li><a href="toilet-detail-station.html">Stationsplein 1</a></li>
+                            <li><a href="toilet-detail-grote-markt.html">Grote Markt</a></li>
+                            <li><a href="toilet-detail-bibliotheek.html">Bibliotheek Centrum</a></li>
+                            <li><a href="toilet-detail-haarlemmerhout.html">Park Haarlemmerhout</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <input type="radio" name="menu-dropdown" id="waterpunten-toggle" class="dropdown-radio" checked>
+                        <label for="waterpunten-toggle" class="dropdown-label active">
+                            <strong class="menu-icon">💧</strong>
+                            <strong class="menu-text">Waterpunten</strong>
+                            <strong class="dropdown-arrow">v</strong>
+                        </label>
+                        <ul class="submenu">
+                            <li><a href="waterpunten.html" class="active-page">Overzicht</a></li>
+                            <li><a href="waterpunt-detail-grote-markt.html">Grote Markt</a></li>
+                            <li><a href="waterpunt-detail-pleinpark.html">Pleinpark</a></li>
+                            <li><a href="waterpunt-detail-patronaat.html">Patronaat</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">📞 Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </header>
+
+    <main class="main-content">
+        <section class="content-wrapper">
+            <h2 class="page-title">Overzicht Waterpunten</h2>
+            <p class="intro-text">
+                Op deze pagina vind je een overzicht van alle beschikbare drinkwaterpunten in de stad. Elk waterpunt is beschreven met informatie over locatie, bereikbaarheid en praktische details. Zo kun je altijd het dichtstbijzijnde waterpunt vinden.
+            </p>
+
+            <section class="toilet-list">
+                <article class="toilet-item">
+                    <h3>Grote Markt - bij de fontein</h3>
+                    <p>
+                        <strong>Locatie & bereikbaarheid:</strong> Centraal gelegen op de Grote Markt, naast de fontein en tegenover het Stadhuis. Goed bereikbaar voor voetgangers en fietsers die het stadscentrum bezoeken. Het waterpunt bevindt zich op straatniveau en is volledig rolstoeltoegankelijk.
+                    </p>
+                    <p>
+                        <strong>Voorzieningen:</strong> Gratis beschikbaar voor iedereen, eenvoudige drukknopbediening, geschikt voor verschillende flesjes en bekers, regelmatig onderhoud door de gemeente.
+                    </p>
+                    <p>
+                        <strong>Praktisch gebruik:</strong> Het waterpunt is het hele jaar door geopend. Extra handig tijdens evenementen op de Grote Markt, zoals markten, festivals en concerten. Door de centrale ligging wordt dit punt vaak gebruikt door zowel inwoners als toeristen.
+                    </p>
+                    <nav class="toilet-actions">
+                        <a href="waterpunt-detail-grote-markt.html" class="btn btn-blue">Bekijk details</a>
+                    </nav>
+                </article>
+
+                <article class="toilet-item">
+                    <h3>Pleinpark - bij de speeltuin</h3>
+                    <p>
+                        <strong>Locatie & bereikbaarheid:</strong> Gelegen in het Pleinpark, bij de speeltuin. Op een breed, toegankelijk pad geplaatst voor gemakkelijke bereikbaarheid. Ideaal voor gezinnen met kinderen die in het park spelen.
+                    </p>
+                    <p>
+                        <strong>Voorzieningen:</strong> Gratis beschikbaar, eenvoudige bediening, geschikt voor verschillende flesjes en bekers, regelmatig onderhoud door de gemeente.
+                    </p>
+                    <p>
+                        <strong>Praktisch gebruik:</strong> Beschikbaar van april tot oktober. Extra handig voor sporters en gezinnen die tijd doorbrengen in het park. Populair tijdens warme zomerdagen.
+                    </p>
+                    <nav class="toilet-actions">
+                        <a href="waterpunt-detail-pleinpark.html" class="btn btn-blue">Bekijk details</a>
+                    </nav>
+                </article>
+
+                <article class="toilet-item">
+                    <h3>Patronaat - Zijstraat 6</h3>
+                    <p>
+                        <strong>Locatie & bereikbaarheid:</strong> Gelegen bij het Patronaat, duidelijk gemarkeerd en goed bereikbaar. Makkelijk te vinden voor bezoekers van het culturele centrum en omwonenden.
+                    </p>
+                    <p>
+                        <strong>Voorzieningen:</strong> Gratis beschikbaar, moderne bediening, hygi�nisch ontwerp, regelmatig onderhoud.
+                    </p>
+                    <p>
+                        <strong>Praktisch gebruik:</strong> Het hele jaar door beschikbaar. Populair tijdens concerten en evenementen in het Patronaat. Ook handig voor mensen die in de buurt wonen of werken.
+                    </p>
+                    <nav class="toilet-actions">
+                        <a href="waterpunt-detail-patronaat.html" class="btn btn-blue">Bekijk details</a>
+                    </nav>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer class="dark-footer">
+        <section class="footer-content">
+            <section class="footer-section">
+                <h3><strong class="water-icon">??</strong> Toiletten &amp; Waterpunten</h3>
+                <p>Haarlem</p>
+                <p>Vind snel en gemakkelijk openbare toiletten en drinkwaterpunten in de stad.</p>
+            </section>
+            
+            <section class="footer-section">
+                <h4>Navigatie</h4>
+                <nav>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="toiletten.html">Overzicht Toiletten</a></p>
+                    <p><a href="waterpunten.html">Overzicht Waterpunten</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                </nav>
+            </section>
+            
+            <aside class="footer-section">
+                <h4>Contact</h4>
+                <p>?? info@toiletten-waterpunten.nl</p>
+                <p>?? Haarlem, Nederland</p>
+                <p>?? 24/7 beschikbaar</p>
+            </aside>
+        </section>
+        
+        <section class="footer-bottom">
+            <p>@ 2025 Toiletten & Waterpunten Haarlem. Alle rechten voorbehouden.</p>
+            <p>Meer informatie via ons <a href="contact.html">contactformulier</a>.</p>
+        </section>
+    </footer>
+
+    
+    <section class="cookie-banner" role="dialog" aria-live="polite">We gebruiken alleen functionele cookies. <a href="contact.html">Meer info</a></section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

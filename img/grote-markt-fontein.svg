@@ -1,0 +1,44 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#e6f3ff"/>
+  
+  <!-- Fountain base -->
+  <ellipse cx="200" cy="250" rx="150" ry="30" fill="#8b7355"/>
+  
+  <!-- Water in base -->
+  <ellipse cx="200" cy="245" rx="140" ry="25" fill="#4a90e2"/>
+  
+  <!-- Middle tier -->
+  <ellipse cx="200" cy="200" rx="80" ry="15" fill="#8b7355"/>
+  <ellipse cx="200" cy="195" rx="75" ry="12" fill="#4a90e2"/>
+  
+  <!-- Top tier -->
+  <ellipse cx="200" cy="160" rx="40" ry="8" fill="#8b7355"/>
+  <ellipse cx="200" cy="155" rx="37" ry="6" fill="#4a90e2"/>
+  
+  <!-- Center column -->
+  <rect x="195" y="150" width="10" height="100" fill="#8b7355"/>
+  
+  <!-- Water streams -->
+  <path d="M 200 150 Q 190 140 185 130 Q 180 125 175 120" stroke="#87ceeb" stroke-width="2" fill="none"/>
+  <path d="M 200 150 Q 210 140 215 130 Q 220 125 225 120" stroke="#87ceeb" stroke-width="2" fill="none"/>
+  <path d="M 200 150 Q 200 135 200 120 Q 200 115 200 110" stroke="#87ceeb" stroke-width="3" fill="none"/>
+  
+  <!-- Additional water drops -->
+  <circle cx="185" cy="130" r="2" fill="#87ceeb"/>
+  <circle cx="215" cy="130" r="2" fill="#87ceeb"/>
+  <circle cx="195" cy="125" r="1.5" fill="#87ceeb"/>
+  <circle cx="205" cy="125" r="1.5" fill="#87ceeb"/>
+  
+  <!-- Decorative elements on fountain -->
+  <circle cx="180" cy="200" r="3" fill="#6b5b47"/>
+  <circle cx="220" cy="200" r="3" fill="#6b5b47"/>
+  <circle cx="170" cy="245" r="4" fill="#6b5b47"/>
+  <circle cx="230" cy="245" r="4" fill="#6b5b47"/>
+  
+  <!-- Ground/plaza -->
+  <rect x="0" y="270" width="400" height="30" fill="#d3d3d3"/>
+  
+  <!-- Title text -->
+  <text x="200" y="290" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Fontein Grote Markt Haarlem</text>
+</svg>

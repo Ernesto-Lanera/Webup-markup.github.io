@@ -1,0 +1,5 @@
+Student name: **Ernesto Lanera**
+Student number: **738442**
+Student class: **HAINF25VT1B**
+GitHub Repository: **https://github.com/Ernesto-Lanera/Webup-markup**
+GitHub Pages URL: **Uw GitHub Pages URL**

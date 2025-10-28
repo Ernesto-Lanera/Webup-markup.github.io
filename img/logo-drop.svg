@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60">
+  <!-- Druppel vorm -->
+  <path d="M30 5 C35 5, 45 15, 45 30 C45 42, 37 50, 30 50 C23 50, 15 42, 15 30 C15 15, 25 5, 30 5 Z" fill="#4285F4"/>
+  <!-- Highlight -->
+  <ellipse cx="26" cy="22" rx="4" ry="8" fill="#ffffff" opacity="0.3"/>
+</svg>

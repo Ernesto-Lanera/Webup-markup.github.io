@@ -1,0 +1,208 @@
+<!--
+    toiletten.html - Overzichtspagina voor alle openbare toiletten in Haarlem
+    
+    Deze pagina toont een grid overzicht van alle beschikbare toiletlocaties
+    met filtering opties en links naar detailpagina's voor elke locatie.
+-->
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<!-- Basis HTML meta tags voor SEO en responsive design -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description"
+			content="Overzicht van alle openbare toiletten in Haarlem met informatie over toegankelijkheid, hygiëne, kosten en openingstijden.">
+		<meta name="keywords"
+			content="Haarlem, toiletten, openbaar, toegankelijkheid, hygiëne">
+		<meta name="author" content="Ernesto Lanera">
+		<link rel="icon" href="img/favicon.svg">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+			rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css/header.css">
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<link rel="stylesheet" type="text/css" href="css/pages.css">
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
+		<link rel="stylesheet" type="text/css" href="css/responsive.css">
+		<title>Overzicht Toiletten - Haarlem</title>
+	</head>
+	<body>
+		<!-- Header met CSS-only hamburger menu -->
+		<header class="css-menu-header">
+			<!-- Verborgen checkbox voor CSS-only menu functionaliteit -->
+			<input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+			<!-- Hoofdnavigatie -->
+			<nav class="header-nav">
+				<section class="logo-container">
+					<a href="index.html">
+						<img src="img/logo-drop.svg" alt="Logo" class="header-logo"
+							title="Website logo">
+					</a>
+				</section>
+				<h1 class="header-title">Overzicht Toiletten</h1>
+				<label for="menu-toggle" class="hamburger-label">
+					<em class="hamburger-line"></em>
+					<em class="hamburger-line"></em>
+					<em class="hamburger-line"></em>
+				</label>
+			</nav>
+
+			<label for="menu-toggle" class="menu-overlay"></label>
+
+			<aside class="sidebar-menu">
+				<header class="menu-header">
+					<h2>Menu</h2>
+					<label for="menu-toggle" class="close-menu">×</label>
+				</header>
+				<nav class="menu-nav">
+					<ul>
+						<!-- Hidden radio for closing all dropdowns -->
+						<input type="radio" name="menu-dropdown" id="close-dropdown" class="dropdown-radio">
+						
+						<li><a href="index.html">🏠 Home</a></li>
+						<li class="menu-dropdown">
+							<input type="radio" name="menu-dropdown" id="toiletten-toggle" class="dropdown-radio" checked>
+							<label for="toiletten-toggle" class="dropdown-label active">
+								<strong class="menu-icon">🚽</strong>
+								<strong class="menu-text">Toiletten</strong>
+								<strong class="dropdown-arrow">v</strong>
+							</label>
+							<ul class="submenu">
+								<li><a href="toiletten.html" class="active-page">Overzicht</a></li>
+								<li><a href="toilet-detail-station.html">Stationsplein 1</a></li>
+								<li><a href="toilet-detail-grote-markt.html">Grote Markt</a></li>
+								<li><a href="toilet-detail-bibliotheek.html">Bibliotheek
+										Centrum</a></li>
+								<li><a href="toilet-detail-haarlemmerhout.html">Park
+										Haarlemmerhout</a></li>
+							</ul>
+						</li>
+						<li class="menu-dropdown">
+							<input type="radio" name="menu-dropdown" id="waterpunten-toggle" class="dropdown-radio">
+							<label for="waterpunten-toggle" class="dropdown-label">
+								<strong class="menu-icon">💧</strong>
+								<strong class="menu-text">Waterpunten</strong>
+								<strong class="dropdown-arrow">v</strong>
+							</label>
+							<ul class="submenu">
+								<li><a href="waterpunten.html">Overzicht</a></li>
+								<li><a href="waterpunt-detail-grote-markt.html">Grote Markt</a></li>
+								<li><a href="waterpunt-detail-pleinpark.html">Pleinpark</a></li>
+								<li><a href="waterpunt-detail-patronaat.html">Patronaat</a></li>
+							</ul>
+						</li>
+						<li><a href="contact.html">📞 Contact</a></li>
+					</ul>
+				</nav>
+			</aside>
+		</header>
+
+		<main class="main-content">
+			<section class="content-wrapper">
+				<h2 class="page-title">Alle openbare toiletten in de stad</h2>
+				<p class="intro-text">
+					Op deze pagina vind je een overzicht van de belangrijkste openbare
+					toiletten in de stad. Elk toilet is beschreven met informatie over
+					toegankelijkheid, hygiëne, kosten en openingstijden. Zo kun je eenvoudig
+					zien welk toilet het beste aansluit bij jouw situatie.
+				</p>
+
+				<section class="toilet-list">
+					<article class="toilet-item">
+						<h3>Station Haarlem – Stationsplein 1</h3>
+						<p>
+							Gelegen in de stationshal, goed bereikbaar voor reizigers en bezoekers.
+							Dit toilet is ruim opgezet, schoon en rolstoeltoegankelijk. Dagelijks
+							geopend van 06:00 tot 23:00 uur. Kosten: €0,50.
+						</p>
+						<section class="toilet-actions">
+							<a href="toilet-detail-station.html" class="btn btn-blue">Bekijk
+								details</a>
+						</section>
+					</article>
+
+					<article class="toilet-item">
+						<h3>Grote Markt – achter het Stadhuis</h3>
+						<p>
+							Een eenvoudig maar functioneel toilet, midden in het centrum. Geschikt
+							voor snelle stops tijdens het winkelen of een bezoek aan de markt. Niet
+							rolstoeltoegankelijk, maar wel gratis en dagelijks geopend van 08:00 tot
+							22:00 uur.
+						</p>
+						<section class="toilet-actions">
+							<a href="toilet-detail-grote-markt.html" class="btn btn-blue">Bekijk
+								details</a>
+						</section>
+					</article>
+
+					<article class="toilet-item">
+						<h3>Bibliotheek Centrum – Gasthuisstraat 32</h3>
+						<p>
+							Modern en hygiënisch toilet, gratis toegankelijk voor bezoekers van de
+							bibliotheek. Rolstoelvriendelijk en voorzien van een genderneutraal
+							toilet. Openingstijden: maandag t/m zaterdag 09:00 – 18:00 uur.
+						</p>
+						<section class="toilet-actions">
+							<a href="toilet-detail-bibliotheek.html" class="btn btn-blue">Bekijk
+								details</a>
+						</section>
+					</article>
+
+					<article class="toilet-item">
+						<h3>Park Haarlemmerhout – ingang Kleine Houtweg</h3>
+						<p>
+							Seizoensgebonden toilet, handig voor gezinnen en wandelaars in het park.
+							Rolstoeltoegankelijk, gratis en geopend van april tot oktober, dagelijks
+							van 09:00 tot 20:00 uur.
+						</p>
+						<section class="toilet-actions">
+							<a href="toilet-detail-haarlemmerhout.html" class="btn btn-blue">Bekijk
+								details</a>
+						</section>
+					</article>
+				</section>
+			</section>
+		</main>
+
+		<footer class="dark-footer">
+			<section class="footer-content">
+				<section class="footer-section">
+					<h3><strong class="water-icon">💧</strong> Toiletten &amp; Waterpunten</h3>
+					<p>Vind snel en gemakkelijk openbare toiletten en drinkwaterpunten in de
+						stad.</p>
+				</section>
+
+				<section class="footer-section">
+					<h4>Navigatie</h4>
+					<nav>
+						<p><a href="index.html">Home</a></p>
+						<p><a href="toiletten.html">Overzicht Toiletten</a></p>
+						<p><a href="waterpunten.html">Overzicht Waterpunten</a></p>
+						<p><a href="contact.html">Contact</a></p>
+					</nav>
+				</section>
+
+				<aside class="footer-section">
+					<h4>Contact</h4>
+					<p>📧 info@toiletten-waterpunten.nl</p>
+					<p>📍 Haarlem, Nederland</p>
+					<p>🕐 24/7 beschikbaar</p>
+				</aside>
+			</section>
+
+			<section class="footer-bottom">
+				<p>@ 2025 Toiletten & Waterpunten Haarlem. Alle rechten voorbehouden.</p>
+			</section>
+		</footer>
+
+		<section class="cookie-banner" role="dialog" aria-live="polite">We gebruiken
+			alleen functionele cookies. <a href="contact.html">Meer
+				info</a></section></body>
+</html>
+
+

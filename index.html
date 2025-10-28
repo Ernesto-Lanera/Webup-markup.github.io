@@ -1,0 +1,238 @@
+<!-- 
+    Toiletten & Waterpunten Haarlem - Homepage
+    Dit is de hoofdpagina van de website voor openbare toiletten en drinkwaterpunten in Haarlem
+    Auteur: Ernesto Lanera
+    Datum: 2025
+-->
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<!-- Meta informatie voor browser en SEO -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description"
+			content="Vind snel openbare toiletten en drinkwaterpunten in Haarlem. Informatie over toegankelijkheid, hygiëne, kosten en openingstijden voor een comfortabel bezoek aan de stad.">
+		<meta name="keywords"
+			content="Haarlem, openbare, toiletten, waterpunten, toegankelijkheid">
+		<meta name="author" content="Ernesto Lanera">
+
+		<!-- Favicon en font imports -->
+		<link rel="icon" href="img/favicon.svg">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+			rel="stylesheet">
+
+		<!-- CSS Stylesheets - georganiseerd per component -->
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css/header.css">
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<link rel="stylesheet" type="text/css" href="css/pages.css">
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
+		<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+		<title>Toiletten & Waterpunten - Haarlem</title>
+	</head>
+	<body>
+		<!-- Header sectie met navigatie en hamburger menu -->
+		<header class="css-menu-header">
+			<!-- Checkbox voor CSS-only menu toggle functionaliteit -->
+			<input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+			<!-- Hoofdnavigatie bar -->
+			<nav class="header-nav">
+				<!-- Logo container -->
+				<section class="logo-container">
+					<a href="index.html">
+						<img src="img/logo-drop.svg" alt="Logo" class="header-logo"
+							title="Website logo">
+					</a>
+				</section>
+				<h1 class="header-title">Homepagina</h1>
+				<!-- Hamburger menu button -->
+				<label for="menu-toggle" class="hamburger-label">
+					<em class="hamburger-line"></em>
+					<em class="hamburger-line"></em>
+					<em class="hamburger-line"></em>
+				</label>
+			</nav>
+
+			<!-- Overlay voor het sluiten van het menu -->
+			<label for="menu-toggle" class="menu-overlay"></label>
+
+			<!-- Zijmenu (sidebar) -->
+			<aside class="sidebar-menu">
+				<header class="menu-header">
+					<h2>Menu</h2>
+					<label for="menu-toggle" class="close-menu">×</label>
+				</header>
+				<nav class="menu-nav">
+					<ul>
+						<!-- Hidden radio for closing all dropdowns -->
+						<input type="radio" name="menu-dropdown" id="close-dropdown" class="dropdown-radio" checked>
+						
+						<li><a href="index.html" class="active-page">🏠 Home</a></li>
+						<li class="menu-dropdown">
+							<input type="radio" name="menu-dropdown" id="toiletten-toggle" class="dropdown-radio">
+							<label for="toiletten-toggle" class="dropdown-label">
+								<strong class="menu-icon">🚽</strong>
+								<strong class="menu-text">Toiletten</strong>
+								<strong class="dropdown-arrow">v</strong>
+							</label>
+							<ul class="submenu">
+								<li><a href="toiletten.html">Overzicht</a></li>
+								<li><a href="toilet-detail-station.html">Stationsplein 1</a></li>
+								<li><a href="toilet-detail-grote-markt.html">Grote Markt</a></li>
+								<li><a href="toilet-detail-bibliotheek.html">Bibliotheek
+										Centrum</a></li>
+								<li><a href="toilet-detail-haarlemmerhout.html">Park
+										Haarlemmerhout</a></li>
+							</ul>
+						</li>
+						<li class="menu-dropdown">
+							<input type="radio" name="menu-dropdown" id="waterpunten-toggle" class="dropdown-radio">
+							<label for="waterpunten-toggle" class="dropdown-label">
+								<strong class="menu-icon">💧</strong>
+								<strong class="menu-text">Waterpunten</strong>
+								<strong class="dropdown-arrow">v</strong>
+							</label>
+							<ul class="submenu">
+								<li><a href="waterpunten.html">Overzicht</a></li>
+								<li><a href="waterpunt-detail-grote-markt.html">Grote Markt</a></li>
+								<li><a href="waterpunt-detail-pleinpark.html">Pleinpark</a></li>
+								<li><a href="waterpunt-detail-patronaat.html">Patronaat</a></li>
+							</ul>
+						</li>
+						<li><a href="contact.html">📞 Contact</a></li>
+					</ul>
+				</nav>
+			</aside>
+		</header>
+
+		<!-- Hoofdinhoud van de pagina -->
+		<main class="main-content">
+			<section class="content-wrapper">
+				<!-- Hoofdtitel van de homepage -->
+				<h2 class="page-title">Vind direct een openbaar toilet of drinkwaterpunt in
+					jouw buurt</h2>
+
+				<!-- Introductietekst met welkomstbericht -->
+				<p class="intro-text">
+					Welkom op onze website voor openbare toiletten en drinkwaterpunten in
+					Haarlem. Hier vind je betrouwbare informatie over alle beschikbare
+					voorzieningen in de stad, inclusief details over toegankelijkheid, hygiëne
+					en eventuele kosten.
+				</p>
+
+				<section class="content-section">
+					<h3>Waarom deze website?</h3>
+					<p>
+						In veel steden is informatie over sanitaire voorzieningen verspreid of
+						verouderd. Bewegwijzering ontbreekt vaak, en online bronnen komen niet
+						overeen met de werkelijkheid. Dit kan zeer vervelend en stressvol zijn,
+						vooral voor mensen die afhankelijk zijn van <em>betrouwbare</em>
+						voorzieningen. Deze site brengt deze informatie samen en maakt het
+						overzichtelijk.
+					</p>
+				</section>
+
+				<section class="content-section">
+					<header class="section-header">
+						<strong class="section-icon">🔍</strong>
+						<h3>Wat vind je hier?</h3>
+					</header>
+					<p>
+						Je vindt hier overzichtspagina's met alle <strong>openbare toiletten en
+							drinkwaterpunten</strong>. Klik je door, dan kom je op detailpagina's
+						waar per locatie praktische informatie staat: adres, openingstijden,
+						toegankelijkheid. Zo weet je altijd waar je aan toe bent.
+					</p>
+				</section>
+
+				<section class="content-section">
+					<header class="section-header">
+						<strong class="section-icon">👥</strong>
+						<h3>Voor wie is dit handig?</h3>
+					</header>
+					<p>Deze site is bedoeld voor iedereen die onderweg is, maar is het
+						bijzonder handig voor:</p>
+					<ul class="info-list">
+						<li><strong>Ouderen:</strong> die vaak afhankelijk zijn van toegankelijke
+							en schone voorzieningen</li>
+						<li><strong>Ouders met jonge kinderen:</strong> die ook veelvuldig een
+							toilet of drinkwaterpunt nodig hebben</li>
+						<li><strong>Wandelaars en toeristen:</strong> die vaak langere tijd
+							onderweg zijn en behoefte hebben aan comfort</li>
+					</ul>
+				</section>
+
+				<section class="content-section">
+					<header class="section-header">
+						<strong class="section-icon">⚙️</strong>
+						<h3>Hoe werkt het?</h3>
+					</header>
+					<p>
+						De navigatie is eenvoudig. Kies in het menu voor <em>"Toiletten"</em> of
+						<em>"Waterpunten"</em>. Op de overzichtspagina zie je een lijst met alle
+						locaties, en via een klik krijg je de detailinformatie die je nodig hebt.
+					</p>
+				</section>
+
+				<!-- Call-to-action knoppen voor navigatie naar hoofdsecties -->
+				<nav class="cta-buttons">
+					<a href="toiletten.html" class="btn btn-blue cta-btn">Bekijk alle
+						toiletten</a>
+					<a href="waterpunten.html" class="btn btn-blue cta-btn">Bekijk alle
+						waterpunten</a>
+				</nav>
+			</section>
+		</main>
+
+		<!-- Footer sectie met contactinformatie en links -->
+		<footer class="dark-footer">
+			<section class="footer-content">
+				<section class="footer-section">
+					<h3><strong class="water-icon">💧</strong> Toiletten &amp; Waterpunten</h3>
+					<p>Vind snel en gemakkelijk openbare toiletten en drinkwaterpunten in de
+						stad.</p>
+				</section>
+
+				<section class="footer-section">
+					<h4>Navigatie</h4>
+					<nav>
+						<p><a href="index.html">Home</a></p>
+						<p><a href="toiletten.html">Overzicht Toiletten</a></p>
+						<p><a href="waterpunten.html">Overzicht Waterpunten</a></p>
+						<p><a href="contact.html">Contact</a></p>
+					</nav>
+				</section>
+
+				<aside class="footer-section">
+					<h4>Contact</h4>
+					<p>📧 info@toiletten-waterpunten.nl</p>
+					<p>📍 Haarlem, Nederland</p>
+					<p>🕐 24/7 beschikbaar</p>
+				</aside>
+			</section>
+
+			<!-- Footer bottom sectie met copyright en toegankelijkheidsinformatie -->
+			<section class="footer-bottom">
+				<p>&copy; 2025 Toiletten &amp; Waterpunten Haarlem. Alle rechten
+					voorbehouden.</p>
+				<p>Prijs informatie: gratis service - kosten vanaf &euro;0,50 voor premium
+					toiletten</p>
+				<p>Kwaliteit gegarandeerd&trade; - toegankelijkheid conform
+					EU-richtlijnen</p>
+				<p>Meer informatie via ons <a href="contact.html">contactformulier</a>.</p>
+			</section>
+		</footer>
+
+		<!-- Cookie banner voor privacy compliance -->
+
+		<section class="cookie-banner" role="dialog" aria-live="polite">We gebruiken
+			alleen functionele cookies. <a href="contact.html">Meer
+				info</a></section></body>
+</html>
+

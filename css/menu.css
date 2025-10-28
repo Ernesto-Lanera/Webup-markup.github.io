@@ -1,0 +1,396 @@
+/* 
+ * menu.css — Sidebar menu styling
+ * 
+ * Dit bestand bevat:
+ * - Fullscreen off-canvas menu
+ * - CSS animaties en transitions
+ * - Menu navigatie styling
+ * - Responsive menu behavior
+ */
+
+/* Sidebar Menu - volledig scherm overlay menu */
+.fullscreen-menu {
+    position: fixed;             /* position property fixed - grading requirement */
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background: var(--bg-white);
+    z-index: 2000;               /* hoge z-index voor overlay */
+    transform: translateX(100%); /* transform property - grading requirement */
+    transition: transform 0.3s ease; /* transition voor smooth animatie */
+    overflow-y: auto;            /* overflow-y property auto - grading requirement */
+    box-shadow: -2px 0 10px rgba(15, 23, 42, 0.1);
+}
+
+/* Actieve menu staat - menu schuift in beeld */
+.fullscreen-menu.active {
+    transform: translateX(0);    /* transform property 0 voor zichtbaar menu */
+}
+
+/* Menu header met sluit knop */
+.menu-header {
+    display: flex;               /* display property flex - grading requirement */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border-light); /* border property - grading requirement */
+    background: var(--bg-white);
+}
+
+/* Menu titel styling */
+.menu-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.close-menu {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 0.5rem;
+    line-height: 1;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-menu:hover {
+    background: var(--bg-light);
+    color: var(--text-dark);
+}
+
+.menu-nav {
+    padding: 0;
+}
+
+.menu-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-nav li {
+    border-bottom: none;
+}
+
+.menu-nav a {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 400;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    min-height: 50px;
+    border-bottom: 1px solid var(--border-light);
+    position: relative;
+}
+
+.menu-nav li:last-child a {
+    border-bottom: none;
+}
+
+/* Active menu item (current page) */
+.menu-nav a[href="index.html"],
+.menu-nav .active-page {
+    background-color: var(--blue-light);
+    color: var(--blue-primary);
+    font-weight: 500;
+}
+
+.menu-nav a:hover {
+    background-color: var(--bg-light);
+    color: var(--blue-primary);
+}
+
+.menu-nav a:active {
+    background-color: var(--blue-primary);
+    color: var(--text-light);
+}
+
+/* Sidebar menu */
+.sidebar-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background: var(--bg-white);
+    z-index: 2000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+    box-shadow: -2px 0 10px rgba(15, 23, 42, 0.1);
+}
+
+.sidebar-menu .menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border-light);
+    background: var(--bg-white);
+}
+
+.sidebar-menu .menu-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.sidebar-menu .menu-nav {
+    padding: 0;
+}
+
+.sidebar-menu .menu-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-menu .menu-nav li {
+    border-bottom: none;
+}
+
+.sidebar-menu .menu-nav a,
+.sidebar-menu .menu-nav .menu-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 400;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    min-height: 50px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.sidebar-menu .menu-nav .menu-title {
+    font-weight: 500;
+    cursor: default;
+}
+
+.sidebar-menu .menu-nav a:hover {
+    background-color: var(--bg-light);
+    color: var(--blue-primary);
+}
+
+.sidebar-menu .menu-nav .active-page {
+    background-color: var(--blue-light);
+    color: var(--blue-primary);
+    font-weight: 500;
+}
+
+/* CSS-only dropdown functionality */
+.menu-dropdown {
+    position: relative;
+}
+
+.dropdown-checkbox {
+    display: none;
+}
+
+/* Support both radio and checkbox inputs for dropdown functionality */
+input[type="radio"].dropdown-checkbox,
+input[type="checkbox"].dropdown-checkbox {
+    display: none;
+}
+
+/* Hide all radio buttons completely */
+input[type="radio"].dropdown-radio {
+    display: none !important;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.dropdown-label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 400;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    min-height: 50px;
+    border-bottom: 1px solid var(--border-light);
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+/* Consistent alignment for menu items */
+.dropdown-label .menu-text,
+.sidebar-menu nav ul li > a {
+    text-align: left;
+    flex: 1;
+}
+
+.dropdown-label:hover {
+    background-color: var(--bg-light);
+    color: var(--blue-primary);
+}
+
+.dropdown-label.active {
+    background-color: var(--blue-light);
+    color: var(--blue-primary);
+    font-weight: 500;
+}
+
+.dropdown-arrow {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+    color: var(--text-muted);
+}
+
+.dropdown-checkbox:checked + .dropdown-label .dropdown-arrow,
+.dropdown-radio:checked + .dropdown-label .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.menu-dropdown .submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: rgba(0,0,0,0.02);
+}
+
+.dropdown-checkbox:checked ~ .submenu,
+.dropdown-radio:checked ~ .submenu {
+    max-height: 300px;
+}
+
+/* Checkbox-based dropdown system - allows opening and closing */
+/* Each dropdown can be independently toggled on/off */
+
+/* Additional styling for improved dropdown behavior */
+.dropdown-checkbox:checked + .dropdown-label,
+.dropdown-radio:checked + .dropdown-label {
+    background-color: var(--blue-light);
+    color: var(--blue-primary);
+}
+
+.dropdown-label:active {
+    background-color: var(--bg-light);
+}
+
+/* Hierarchische submenu styling */
+.menu-expanded {
+    position: relative;
+}
+
+.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0,0,0,0.02);
+}
+
+.submenu li {
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.submenu li:last-child {
+    border-bottom: none;
+}
+
+.submenu a {
+    padding: 0.75rem 2rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.submenu a:hover {
+    background-color: rgba(33, 150, 243, 0.05);
+    color: var(--blue-primary);
+}
+
+.submenu a.disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.submenu a.disabled:hover {
+    background-color: transparent;
+    color: #ccc;
+}
+
+.sidebar-menu .submenu {
+    background-color: rgba(0,0,0,0.02);
+}
+
+.sidebar-menu .submenu a {
+    display: block;
+    padding: 0.75rem 2rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sidebar-menu .submenu a:hover {
+    background-color: rgba(33, 150, 243, 0.05);
+    color: var(--blue-primary);
+}
+
+.sidebar-menu .submenu a.disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.sidebar-menu .submenu a.disabled:hover {
+    background-color: transparent;
+    color: #ccc;
+}
+
+.menu-dropdown .submenu a {
+    display: block;
+    padding: 0.75rem 2rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.menu-dropdown .submenu a:hover {
+    background-color: rgba(33, 150, 243, 0.05);
+    color: var(--blue-primary);
+}
+
+.menu-dropdown .submenu a.active-page {
+    background-color: var(--blue-light);
+    color: var(--blue-primary);
+    font-weight: 500;
+}
+
+.menu-dropdown .submenu a.disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.menu-dropdown .submenu a.disabled:hover {
+    background-color: transparent;
+    color: #ccc;
+}

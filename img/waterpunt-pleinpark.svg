@@ -1,0 +1,70 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#98d982;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c8e6c9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#skyGradient2)"/>
+  
+  <!-- Park ground -->
+  <rect x="0" y="300" width="600" height="100" fill="#4caf50"/>
+  
+  <!-- Playground area -->
+  <rect x="100" y="250" width="200" height="50" fill="#66bb6a" stroke="#2e7d32" stroke-width="2" rx="10"/>
+  
+  <!-- Playground equipment -->
+  <!-- Slide -->
+  <rect x="120" y="220" width="40" height="80" fill="#ff9800" rx="5"/>
+  <polygon points="120,220 140,200 160,220" fill="#ff5722"/>
+  
+  <!-- Swing set -->
+  <line x1="200" y1="200" x2="200" y2="250" stroke="#8d6e63" stroke-width="4"/>
+  <line x1="220" y1="200" x2="220" y2="250" stroke="#8d6e63" stroke-width="4"/>
+  <line x1="200" y1="200" x2="220" y2="200" stroke="#8d6e63" stroke-width="4"/>
+  <rect x="195" y="230" width="10" height="8" fill="#4caf50" rx="2"/>
+  <rect x="215" y="235" width="10" height="8" fill="#2196f3" rx="2"/>
+  
+  <!-- Water fountain -->
+  <rect x="400" y="240" width="40" height="80" fill="#f3f4f6" stroke="#9fa6b0" stroke-width="2" rx="5"/>
+  <rect x="410" y="255" width="20" height="30" fill="#e1e7ef"/>
+  <circle cx="420" cy="270" r="5" fill="#66b2ff"/>
+  <line x1="420" y1="265" x2="420" y2="250" stroke="#66b2ff" stroke-width="2"/>
+  <text x="420" y="340" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">Drinkwaterpunt</text>
+  
+  <!-- Trees -->
+  <circle cx="80" cy="180" r="35" fill="#388e3c"/>
+  <rect x="75" y="210" width="10" height="40" fill="#5d4037"/>
+  
+  <circle cx="350" cy="160" r="30" fill="#4caf50"/>
+  <rect x="345" y="185" width="10" height="35" fill="#5d4037"/>
+  
+  <circle cx="500" cy="170" r="25" fill="#66bb6a"/>
+  <rect x="497" y="190" width="6" height="30" fill="#5d4037"/>
+  
+  <!-- Path -->
+  <path d="M50,320 Q200,310 350,315 Q450,320 550,325" stroke="#bdbdbd" stroke-width="15" fill="none"/>
+  
+  <!-- Children playing -->
+  <circle cx="250" cy="295" r="6" fill="#ffdbac"/>
+  <rect x="247" y="301" width="6" height="12" fill="#e91e63"/>
+  <rect x="248" y="313" width="2" height="8" fill="#8b4513"/>
+  <rect x="250" y="313" width="2" height="8" fill="#8b4513"/>
+  
+  <circle cx="180" cy="290" r="5" fill="#ffdbac"/>
+  <rect x="178" y="295" width="4" height="10" fill="#2196f3"/>
+  <rect x="179" y="305" width="1.5" height="6" fill="#8b4513"/>
+  <rect x="180.5" y="305" width="1.5" height="6" fill="#8b4513"/>
+  
+  <!-- Bench -->
+  <rect x="320" y="280" width="60" height="8" fill="#8d6e63"/>
+  <rect x="325" y="270" width="4" height="18" fill="#6d4c41"/>
+  <rect x="371" y="270" width="4" height="18" fill="#6d4c41"/>
+  
+  <!-- Sign -->
+  <rect x="450" y="280" width="30" height="20" fill="#fff" stroke="#333" stroke-width="1"/>
+  <text x="465" y="292" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">PARK</text>
+  <rect x="462" y="300" width="6" height="20" fill="#8d6e63"/>
+</svg>

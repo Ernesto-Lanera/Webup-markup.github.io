@@ -1,0 +1,69 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87ceeb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b8d5f0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="buildingGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e6ddd4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4c4b0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#skyGradient)"/>
+  
+  <!-- Ground -->
+  <rect x="0" y="320" width="600" height="80" fill="#c8c8c8"/>
+  
+  <!-- Historic buildings (Stadhuis) -->
+  <rect x="50" y="180" width="150" height="140" fill="url(#buildingGradient)" stroke="#a89886" stroke-width="2"/>
+  <polygon points="50,180 125,130 200,180" fill="#8b7566"/>
+  <rect x="80" y="220" width="20" height="40" fill="#664433"/>
+  <rect x="130" y="220" width="20" height="40" fill="#664433"/>
+  <rect x="170" y="220" width="15" height="60" fill="#664433"/>
+  <text x="125" y="350" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Stadhuis</text>
+  
+  <!-- Fountain -->
+  <ellipse cx="300" cy="300" rx="50" ry="20" fill="#4a90e2" opacity="0.6"/>
+  <circle cx="300" cy="280" r="40" fill="#66b2ff" stroke="#3373dc" stroke-width="3"/>
+  <circle cx="300" cy="280" r="20" fill="#f3f4f6"/>
+  <line x1="300" y1="280" x2="300" y2="260" stroke="#66b2ff" stroke-width="3"/>
+  <circle cx="298" cy="265" r="2" fill="#66b2ff"/>
+  <circle cx="302" cy="265" r="2" fill="#66b2ff"/>
+  <circle cx="295" cy="268" r="1.5" fill="#66b2ff"/>
+  <circle cx="305" cy="268" r="1.5" fill="#66b2ff"/>
+  <text x="300" y="340" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Fontein</text>
+  
+  <!-- Water fountain (drinkwaterpunt) -->
+  <rect x="420" y="250" width="40" height="80" fill="#f3f4f6" stroke="#9fa6b0" stroke-width="2" rx="5"/>
+  <rect x="430" y="265" width="20" height="30" fill="#e1e7ef"/>
+  <circle cx="440" cy="280" r="5" fill="#66b2ff"/>
+  <line x1="440" y1="275" x2="440" y2="260" stroke="#66b2ff" stroke-width="2"/>
+  <line x1="435" y1="270" x2="445" y2="270" stroke="#66b2ff" stroke-width="1"/>
+  <text x="440" y="350" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">Drinkwaterpunt</text>
+  
+  <!-- Market stalls -->
+  <rect x="230" y="300" width="40" height="30" fill="#fff" stroke="#ddd" stroke-width="1"/>
+  <rect x="280" y="300" width="40" height="30" fill="#fff" stroke="#ddd" stroke-width="1"/>
+  <polygon points="230,300 250,290 270,300" fill="#ff6b6b"/>
+  <polygon points="280,300 300,290 320,300" fill="#4ecdc4"/>
+  <text x="275" y="350" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">Markt</text>
+  
+  <!-- Trees -->
+  <circle cx="100" cy="150" r="30" fill="#62c462"/>
+  <rect x="95" y="170" width="10" height="30" fill="#8b4513"/>
+  <circle cx="500" cy="140" r="25" fill="#62c462"/>
+  <rect x="497" y="160" width="6" height="40" fill="#8b4513"/>
+  
+  <!-- People -->
+  <circle cx="350" cy="290" r="8" fill="#ffdbac"/>
+  <rect x="345" y="298" width="10" height="20" fill="#4169e1"/>
+  <rect x="347" y="318" width="3" height="10" fill="#8b4513"/>
+  <rect x="350" y="318" width="3" height="10" fill="#8b4513"/>
+  
+  <circle cx="180" cy="295" r="6" fill="#ffdbac"/>
+  <rect x="177" y="301" width="6" height="15" fill="#228b22"/>
+  <rect x="178" y="316" width="2" height="8" fill="#8b4513"/>
+  <rect x="180" y="316" width="2" height="8" fill="#8b4513"/>
+</svg>
